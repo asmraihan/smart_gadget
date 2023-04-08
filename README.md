@@ -32,3 +32,4 @@ Emoji -> [EmojiPedia](https://emojipedia.org/)
 Image -> [Freepik](https://www.freepik.com/)
 
 # smart_gadget
+# smart_gadget
