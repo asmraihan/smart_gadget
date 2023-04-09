@@ -35,7 +35,7 @@ const Home = () => {
         alt=''
         className='w-3/4  mx-auto mb-12 -mt-12 lg:-mt-40 rounded-lg shadow-md bg-gray-500'
       /> */}
-        <Lottie className='w-1/3 mx-auto -mt-72 rounded-lg z-0' animationData={gadget} loop={true} />
+        <Lottie className='lg:w-1/3 mx-auto lg:-mt-72 rounded-lg z-0' animationData={gadget} loop={true} />
     </section>
   )
 }
