@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
+import Lottie from 'lottie-react'
+import gadget from '../assets/gadget.json'
 
 const Home = () => {
   return (
     <section>
-      <div className='bg-gray-200'>
-        <div className='my-container flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900'>
-          <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-5xl lg:max-w-3xl title-text'>
+      <div className='bg-gray-200 '>
+        <div className='my-container flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900 '>
+          <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-5xl lg:max-w-3xl title-text '>
             Welcome To SmartGadget
           </h1>
-          <p className='my-6 text-xs sm:text-base md:text-lg max-w-2/3 md:max-w-xl max-w-2xl text-gray-900'>
+          <p className='my-6 text-xs sm:text-base md:text-lg max-w-2/3 md:max-w-xl max-w-2xl text-gray-900 z-40'>
             Best E-commerce platform for buying high quality Smart Home
             Appliances at extremely affordable Price.
           </p>
-          <div className='flex flex-wrap justify-center'>
+          <div className='flex flex-wrap justify-center z-40'>
             <Link to='/shop'>
               <button type='button' className='btn-primary'>
                 Shop Now
@@ -28,11 +30,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img
+      {/* <img
         src={heroImg}
         alt=''
-        className='w-3/4 lg:h-[600px] mx-auto mb-12 -mt-12 lg:-mt-40 rounded-lg shadow-md bg-gray-500'
-      />
+        className='w-3/4  mx-auto mb-12 -mt-12 lg:-mt-40 rounded-lg shadow-md bg-gray-500'
+      /> */}
+        <Lottie className='w-1/3 mx-auto -mt-72 rounded-lg z-0' animationData={gadget} loop={true} />
     </section>
   )
 }

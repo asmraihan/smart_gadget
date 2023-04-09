@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ProductCard = ({ product }) => {
-  const { name, picture, price, category } = product
+const ProductCard = ({ product,handleAddToCart }) => {
+  const { name, picture, price, category,id } = product
   return (
     <div className='bg-gray-100 p-6 rounded shadow-lg'>
       <img
@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
       <p className='text-gray-700 '>Category: {category}</p>
       <p className='text-gray-700 font-bold'>Price: {price}$</p>
       <button
-        onClick={() => alert('Item added in the cart')}
+        onClick={() => handleAddToCart(product)}
         type='button'
         className='btn-primary w-full block'
       >
